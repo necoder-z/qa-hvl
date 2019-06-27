@@ -1,7 +1,7 @@
 package com.mkyong.web.entity.enums;
 
 /**
- * Created by Johnny on 06.01.2017.
+ * Created by Neco on 27.06.2019.
  */
 public enum UserRole {
     ADMIN,
