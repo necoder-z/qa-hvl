@@ -38,7 +38,6 @@ const SelectedTags = React.createClass({
 
     return (
       <div className="tags-label">
-        <b>Теги:</b>&nbsp;
         <div className="tags">
           {data.map((item, index) => 
             <span key={index}>

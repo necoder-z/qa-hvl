@@ -31,7 +31,7 @@ const TagsPage = React.createClass({
 
     return (
       <div>
-        <h1>Список тегов</h1>
+        <h1>{t('Tags')}</h1>
 
         <div className="tags">
             {data.map((item, index) =>

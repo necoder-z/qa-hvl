@@ -6,13 +6,13 @@ import localizify from 'localizify';
 import { createHistory } from 'history';
 
 import en from './messages/en.json';
-import ru from './messages/ru.json';
+import tr from './messages/tr.json';
 
 import routes from 'routers/routers.jsx';
 
 localizify
   .add('en', en)
-  .add('ru', ru)
+  .add('tr', tr)
   .setLocale(localStorage.locale || 'en');
 
 // console.log(localizify.getLocale());
