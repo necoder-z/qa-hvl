@@ -142,7 +142,7 @@ var QuestionPage = withRouter(React.createClass({
             <hr className="light" />
             <div className="preview"></div>
             <hr className="light" />            
-            <input className="btn btn-block btn-social btn-github" type="submit" value="Отправить" />
+            <input className="btn btn-block btn-social btn-github" type="submit" value={t('Add answer')}/>
         </form>
         <div className={!auth.loggedIn() ? '' : 'hide'}><br />{t('You should auth')}</div>
       </div>
