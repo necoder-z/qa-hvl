@@ -4,7 +4,7 @@ import { t } from 'localizify';
 
 import LanguageSwitcher from '../utils/language-switcher';
 
-var Header = React.createClass({
+class Header extends React.Component {
   render() {
     return (
       <header id="header">
@@ -39,6 +39,6 @@ var Header = React.createClass({
       </header>
     );
   }
-});
+}
 
 export default Header;

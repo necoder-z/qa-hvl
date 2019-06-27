@@ -6,7 +6,7 @@ import { t } from 'localizify';
 import auth from '../../auth';
 import User from './user';
 
-const DashboardPage = React.createClass({
+class DashboardPage extends React.Component {
   render() {
     const token = auth.getToken();
     const name = auth.getName();
@@ -23,6 +23,6 @@ const DashboardPage = React.createClass({
       </DocumentTitle>
     )
   }
-});
+}
 
 export default DashboardPage;

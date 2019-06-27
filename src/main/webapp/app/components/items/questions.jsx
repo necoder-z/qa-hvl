@@ -7,13 +7,12 @@ import Loader from '../utils/loader';
 
 import QuestionService from '../../services/question';
 
-const Questions = React.createClass({
-  getInitialState() {
-    return {
-      questions: [],
-      loading: true
-    };
-  },
+class Questions extends React.Component {
+  state = {
+    questions: [],
+    loading: true
+  };
+
   componentDidMount() {
     const tag = this.props.tag || false;
     const service = new QuestionService();
@@ -27,7 +26,8 @@ const Questions = React.createClass({
          this.setState({ questions, loading: false });
        });     
     }
-  },
+  }
+
   render() {
     if (this.state.loading) {
       return ( <Loader isActive="true" /> );
@@ -53,6 +53,6 @@ const Questions = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default Questions;

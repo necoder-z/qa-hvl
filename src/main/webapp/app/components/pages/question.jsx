@@ -20,13 +20,12 @@ import Tags from '../items/tags';
 
 
 
-var QuestionPage = withRouter(React.createClass({
-  getInitialState() {
-    return {
-      data: {},
-      loading: true
-    };
-  },
+var QuestionPage = withRouter(class extends React.Component {
+  state = {
+    data: {},
+    loading: true
+  };
+
   componentDidMount() {
 
     if (this.state.loading) {
@@ -48,9 +47,9 @@ var QuestionPage = withRouter(React.createClass({
         }
       })
     , 0);
-  },
+  }
 
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
 
     const message = this.refs.message.value.trim();
@@ -94,13 +93,13 @@ var QuestionPage = withRouter(React.createClass({
     });
 
     return false;
-  },
+  };
 
-  onChangeAnswer() {
+  onChangeAnswer = () => {
     const message = this.refs.message.value.trim();
     // console.log((message));
     $('.preview').html(formatText(message));
-  },
+  };
 
   render() {
     if (this.state.loading) {
@@ -148,6 +147,6 @@ var QuestionPage = withRouter(React.createClass({
       </div>
     );
   }
-}));
+});
 
 export default QuestionPage;

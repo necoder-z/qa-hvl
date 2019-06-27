@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import { Link } from 'react-router';
 
-const Loader = React.createClass({
+class Loader extends React.Component {
   render() {
     const { isActive } = this.props.isActive;
 
@@ -19,6 +19,6 @@ const Loader = React.createClass({
       
     );
   }
-});
+}
 
 export default Loader;

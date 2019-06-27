@@ -6,23 +6,21 @@ import auth from '../auth';
 import Header from './layout/header.jsx';
 import Footer from './layout/footer.jsx';
 
-const App = React.createClass({
-  getInitialState() {
-    return {
-      loggedIn: auth.loggedIn()
-    }
-  },
+class App extends React.Component {
+  state = {
+    loggedIn: auth.loggedIn()
+  };
 
-  updateAuth(loggedIn) {
+  updateAuth = (loggedIn) => {
     this.setState({
       loggedIn
     })
-  },
+  };
 
   componentWillMount() {
     auth.onChange = this.updateAuth
     auth.login()
-  },
+  }
 
   render() {
     return (
@@ -35,6 +33,6 @@ const App = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default App;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Tag from './tag';
 
-const Tags = React.createClass({
+class Tags extends React.Component {
   render() {
     const { data } = this.props;
 
@@ -19,6 +19,6 @@ const Tags = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default Tags;

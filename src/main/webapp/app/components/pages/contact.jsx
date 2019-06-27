@@ -1,6 +1,6 @@
 import React from 'react';
 
-var ContactPage = React.createClass({
+class ContactPage extends React.Component {
   render() {
     return (
       <div>
@@ -11,6 +11,6 @@ var ContactPage = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default ContactPage;

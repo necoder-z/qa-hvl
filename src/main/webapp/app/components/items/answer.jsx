@@ -10,7 +10,7 @@ import Vote from './vote';
 
 import { Link } from 'react-router';
 
-const Answer = React.createClass({
+class Answer extends React.Component {
   render() {
     const { id, comment, created_at, user, updated_at, votes } = this.props.data;
 
@@ -28,6 +28,6 @@ const Answer = React.createClass({
       </div>
     )
   }
-});
+}
 
 export default Answer;

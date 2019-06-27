@@ -11,14 +11,13 @@ import declOfNum from '../../utils/number-dec';
 import QuestionListSmall from '../items/question-list-small';
 import AnswerListSmall from '../items/answer-list-small';
 
-var UserPage = React.createClass({
-  getInitialState() {
-    return {
-      data: {},
-      isExist: false,
-      loading: true
-    };
-  },
+class UserPage extends React.Component {
+  state = {
+    data: {},
+    isExist: false,
+    loading: true
+  };
+
   componentDidMount() {
 
     const userName = this.props.params.name;
@@ -48,7 +47,8 @@ var UserPage = React.createClass({
         this.setState({ data: newData });
       });
     })
-  },
+  }
+
   render() {
     if (this.state.loading) {
       return ( <Loader isActive="true" /> );
@@ -95,6 +95,6 @@ var UserPage = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default UserPage;

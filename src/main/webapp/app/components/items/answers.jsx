@@ -4,14 +4,14 @@ import $ from 'jquery';
 import Answer from './answer';
 import Loader from '../utils/loader';
 
-const Answers = React.createClass({
+class Answers extends React.Component {
   // getInitialState() {
   //   return {
   //     questions: [],
   //     loading: true
   //   };
   // },
-  componentDidMount() {},
+  componentDidMount() {}
 
   render() {
     // if (this.state.loading) {
@@ -30,6 +30,6 @@ const Answers = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default Answers;

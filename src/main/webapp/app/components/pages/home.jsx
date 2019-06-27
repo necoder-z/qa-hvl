@@ -1,7 +1,7 @@
 import React from 'react';
 import Questions from '../items/questions';
 
-var HomePage = React.createClass({
+class HomePage extends React.Component {
   render() {
     return (
       <div>
@@ -9,6 +9,6 @@ var HomePage = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default HomePage;

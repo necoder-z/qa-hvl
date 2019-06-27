@@ -11,7 +11,7 @@ import Vote from './vote';
 
 import { Link } from 'react-router';
 
-const AnswerListSmallItem = React.createClass({
+class AnswerListSmallItem extends React.Component {
   render() {
     const { id, comment, created_at, user, updated_at, votes } = this.props.data;
 
@@ -29,10 +29,10 @@ const AnswerListSmallItem = React.createClass({
       </div>
     )
   }
-});
+}
 
-const AnswerListSmall = React.createClass({
-  componentDidMount() {},
+class AnswerListSmall extends React.Component {
+  componentDidMount() {}
 
   render() {
     const data = this.props.data;
@@ -51,6 +51,6 @@ const AnswerListSmall = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default AnswerListSmall;

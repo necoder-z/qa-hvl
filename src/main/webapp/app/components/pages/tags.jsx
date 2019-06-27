@@ -5,13 +5,12 @@ import { t } from 'localizify';
 
 import { Link } from 'react-router';
 
-const TagsPage = React.createClass({
-  getInitialState() {
-    return {
-      data: [],
-      loading: true
-    };
-  },
+class TagsPage extends React.Component {
+  state = {
+    data: [],
+    loading: true
+  };
+
   componentDidMount() {
     const tag = this.props.tag || false;
     const service = new TagService();
@@ -20,7 +19,8 @@ const TagsPage = React.createClass({
        this.setState({ data, loading: false });
      });     
 
-  },
+  }
+
   render() {
     if (this.state.loading) {
       return ( <Loader isActive="true" /> );
@@ -45,6 +45,6 @@ const TagsPage = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default TagsPage;

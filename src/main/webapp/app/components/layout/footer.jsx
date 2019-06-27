@@ -1,7 +1,7 @@
 import React from 'react';
 import { t } from 'localizify';
 
-var Footer = React.createClass({
+class Footer extends React.Component {
   render() {
     return (
       <footer className="footer" id="footer">
@@ -11,6 +11,6 @@ var Footer = React.createClass({
       </footer>
     );
   }
-});
+}
 
 export default Footer;

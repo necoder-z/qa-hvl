@@ -10,25 +10,24 @@ import UserSign from '../utils/user-sign';
 
 import { Link } from 'react-router';
 
-const Vote = React.createClass({
-  getInitialState() {
-    return {
-      rating: 0,
-      isVoted: 0,
-    };
-  },
+class Vote extends React.Component {
+  state = {
+    rating: 0,
+    isVoted: 0,
+  };
 
-  up(e) {
+  up = (e) => {
     event.preventDefault();
     console.log('up');
     this.request('UP');
-  },
-  down(e) {
+  };
+
+  down = (e) => {
     event.preventDefault();
     this.request('DOWN');
-  },
+  };
 
-  request(mark = 'UP') {
+  request = (mark = 'UP') => {
     if (this.isOwnUser() || this.isVoted('UP') || this.isVoted('DOWN')) {
       console.log('this is own user or is voted');
       return false;
@@ -62,13 +61,13 @@ const Vote = React.createClass({
         console.error(status, err.toString());
       }
     });
-  },
+  };
 
-  isOwnUser() {
+  isOwnUser = () => {
     return auth.getName() === this.props.data.user.username;
-  },
+  };
 
-  isVoted(mark = 'UP') {
+  isVoted = (mark = 'UP') => {
     if (this.state.isVoted === 1 && mark === 'UP') {
       return true;
     }
@@ -87,11 +86,11 @@ const Vote = React.createClass({
       }
     });
     return result;
-  },
+  };
 
   componentDidMount() {
     this.setState({ rating: this.props.data.popular });
-  },
+  }
 
   render() {
     // console.log(JSON.stringify(this.props.data));
@@ -110,6 +109,6 @@ const Vote = React.createClass({
       </div>
     )
   }
-});
+}
 
 export default Vote;

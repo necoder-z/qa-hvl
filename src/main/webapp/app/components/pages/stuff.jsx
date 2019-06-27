@@ -1,6 +1,6 @@
 import React from 'react';
 
-var StuffPage = React.createClass({
+class StuffPage extends React.Component {
   render() {
     return (
       <div>
@@ -17,6 +17,6 @@ var StuffPage = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default StuffPage;

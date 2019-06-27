@@ -3,7 +3,7 @@ import $ from 'jquery';
 import { Link } from 'react-router';
 import { t } from 'localizify';
 
-const Tag = React.createClass({
+class Tag extends React.Component {
   render() {
     const { name } = this.props.data;  
 
@@ -16,6 +16,6 @@ const Tag = React.createClass({
       </Link>
     );
   }
-});
+}
 
 export default Tag;
