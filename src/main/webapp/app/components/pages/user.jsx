@@ -10,8 +10,8 @@ import declOfNum from '../../utils/number-dec';
 
 import QuestionListSmall from '../items/question-list-small';
 import AnswerListSmall from '../items/answer-list-small';
-
-var UserPage = React.createClass({
+var createReactClass = require('create-react-class');
+var UserPage = createReactClass({
   getInitialState() {
     return {
       data: {},

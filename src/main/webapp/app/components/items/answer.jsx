@@ -10,7 +10,9 @@ import Vote from './vote';
 
 import { Link } from 'react-router';
 
-const Answer = React.createClass({
+var createReactClass = require('create-react-class');
+
+const Answer = createReactClass({
   render() {
     const { id, comment, created_at, user, updated_at, votes } = this.props.data;
 

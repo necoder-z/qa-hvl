@@ -8,7 +8,8 @@ import timeAgo from '../../utils/time-ago';
 
 import { Link } from 'react-router';
 
-const Question = React.createClass({
+var createReactClass = require('create-react-class');
+const Question =createReactClass({
   render() {
     const { id, answers, comment, title, created_at, tags, user, updated_at, votes } = this.props.data;
 

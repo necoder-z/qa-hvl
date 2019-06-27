@@ -1,6 +1,6 @@
 import React from 'react';
-
-var StuffPage = React.createClass({
+var createReactClass = require('create-react-class');
+var StuffPage = createReactClass({
   render() {
     return (
       <div>

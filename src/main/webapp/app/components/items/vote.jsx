@@ -10,7 +10,8 @@ import UserSign from '../utils/user-sign';
 
 import { Link } from 'react-router';
 
-const Vote = React.createClass({
+var createReactClass = require('create-react-class');
+const Vote = createReactClass({
   getInitialState() {
     return {
       rating: 0,

@@ -3,7 +3,8 @@ import $ from 'jquery';
 import { Link } from 'react-router';
 import { t } from 'localizify';
 
-const Tag = React.createClass({
+var createReactClass = require('create-react-class');
+const Tag = createReactClass({
   render() {
     const { name } = this.props.data;  
 

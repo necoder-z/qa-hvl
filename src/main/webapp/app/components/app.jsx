@@ -6,7 +6,8 @@ import auth from '../auth';
 import Header from './layout/header.jsx';
 import Footer from './layout/footer.jsx';
 
-const App = React.createClass({
+var createReactClass = require('create-react-class');
+const App = createReactClass({
   getInitialState() {
     return {
       loggedIn: auth.loggedIn()

@@ -4,9 +4,9 @@ import { withRouter  } from 'react-router';
 import { t } from 'localizify';
 
 import Questions from '../items/questions';
-
+var createReactClass = require('create-react-class');
 const QuestionsByTagPage = withRouter(
-  React.createClass({
+  createReactClass({
     render() {
       const tag = this.props.params.name;
 

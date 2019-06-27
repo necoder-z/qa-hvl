@@ -2,8 +2,8 @@ import React from 'react';
 import timeAgo from '../../utils/time-ago';
 import { Link } from 'react-router';
 import { t } from 'localizify';
-
-const UserSign = React.createClass({
+var createReactClass = require('create-react-class');
+const UserSign = createReactClass({
   render() {
     const user = this.props.data.user;
     const created_at = this.props.data.created_at;

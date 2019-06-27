@@ -1,6 +1,7 @@
 import React from 'react';
 
-var ContactPage = React.createClass({
+var createReactClass = require('create-react-class');
+var ContactPage = createReactClass({
   render() {
     return (
       <div>

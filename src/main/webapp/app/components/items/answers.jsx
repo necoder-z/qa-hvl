@@ -4,7 +4,8 @@ import $ from 'jquery';
 import Answer from './answer';
 import Loader from '../utils/loader';
 
-const Answers = React.createClass({
+var createReactClass = require('create-react-class');
+const Answers = createReactClass({
   // getInitialState() {
   //   return {
   //     questions: [],

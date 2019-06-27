@@ -5,7 +5,8 @@ import { t } from 'localizify';
 
 import { Link } from 'react-router';
 
-const TagsPage = React.createClass({
+var createReactClass = require('create-react-class');
+const TagsPage = createReactClass({
   getInitialState() {
     return {
       data: [],

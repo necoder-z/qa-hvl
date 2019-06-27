@@ -5,9 +5,9 @@ import { t } from 'localizify';
 
 import auth from '../../auth';
 import formatText from '../../utils/format-str';
+var createReactClass = require('create-react-class');
 
-
-const TagsVariants = React.createClass({
+const TagsVariants = createReactClass({
   render() {
     const data = this.props.data;
 
@@ -24,7 +24,7 @@ const TagsVariants = React.createClass({
   }
 });
 
-const Tag = React.createClass({
+const Tag = createReactClass({
   render() {
     return (
       <a href="#" onClick={this.props.onTagClick} className="post-tag">{this.props.name}</a>
@@ -32,7 +32,7 @@ const Tag = React.createClass({
   }
 });
 
-const SelectedTags = React.createClass({
+const SelectedTags = createReactClass({
   render() {
     const data = this.props.data;
 
@@ -51,7 +51,7 @@ const SelectedTags = React.createClass({
 });
 
 const AddQuestionPage = withRouter(
-  React.createClass({
+    createReactClass({
     getInitialState() {
       return {
         error: false,

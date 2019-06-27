@@ -1,8 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
 import { Link } from 'react-router';
-
-const Loader = React.createClass({
+var createReactClass = require('create-react-class');
+const Loader = createReactClass({
   render() {
     const { isActive } = this.props.isActive;
 

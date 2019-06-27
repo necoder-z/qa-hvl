@@ -5,9 +5,10 @@ import { t } from 'localizify';
 
 import UserService from '../../services/user';
 import auth from '../../auth';
+var createReactClass = require('create-react-class');
 
 const ChangePasswordPage = withRouter(
-  React.createClass({
+  createReactClass({
 
     getInitialState() {
       return {

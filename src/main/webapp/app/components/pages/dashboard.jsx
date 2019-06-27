@@ -5,8 +5,8 @@ import { t } from 'localizify';
 
 import auth from '../../auth';
 import User from './user';
-
-const DashboardPage = React.createClass({
+var createReactClass = require('create-react-class');
+const DashboardPage = createReactClass({
   render() {
     const token = auth.getToken();
     const name = auth.getName();

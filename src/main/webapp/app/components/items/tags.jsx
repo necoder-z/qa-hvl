@@ -1,7 +1,8 @@
 import React from 'react';
 import Tag from './tag';
 
-const Tags = React.createClass({
+var createReactClass = require('create-react-class');
+const Tags = createReactClass({
   render() {
     const { data } = this.props;
 

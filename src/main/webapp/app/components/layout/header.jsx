@@ -3,8 +3,8 @@ import { Link } from 'react-router';
 import { t } from 'localizify';
 
 import LanguageSwitcher from '../utils/language-switcher';
-
-var Header = React.createClass({
+var createReactClass = require('create-react-class');
+var Header = createReactClass({
   render() {
     return (
       <header id="header">
@@ -21,11 +21,11 @@ var Header = React.createClass({
               <li className="li"><Link to="/tags" activeClassName="active"><u>{t('Tags')}</u></Link></li>
               <li className="li"><Link to="/dashboard" activeClassName="active"><u>{t('Profile')}</u></Link></li>
               <li className="li right"><LanguageSwitcher /></li>
-              <li title={"You are " + (this.props.loggedIn ? '' : 'not') + " logged in."} className="li right">  
+              <li title={"You are " + (this.props.loggedIn ? '' : 'not') + " logged in."} className="li right">
                 {this.props.loggedIn ? (
 
                   <span> {t('Hi')}, <b>{localStorage.name}</b> <Link to="/logout"><u>{t('Logout')}</u></Link> </span>
-                  
+
                 ) : (
                   <span>
                     <Link to="/login" activeClassName="active">{t('Login')}</Link>

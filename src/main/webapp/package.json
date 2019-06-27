@@ -11,14 +11,15 @@
   "author": "Alexander Morgunov <fxl@list.ru>",
   "license": "ISC",
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "history": "^2.1.2",
     "jquery": "^3.1.1",
     "json-loader": "^0.5.4",
     "localizify": "^1.1.2",
     "prismjs": "^1.6.0",
-    "react": "^15.4.0",
+    "react": "^16.0.0",
     "react-document-title": "^2.0.2",
-    "react-dom": "^15.4.0",
+    "react-dom": "^16.0.0",
     "react-router": "^3.0.0",
     "semantic-ui-react": "^0.87.2",
     "wolfy87-eventemitter": "^5.1.0"

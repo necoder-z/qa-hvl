@@ -3,7 +3,9 @@ import $ from 'jquery';
 import { Link } from 'react-router';
 import localizify, {t} from 'localizify';
 
-const LanguageSwitcher = React.createClass({
+var createReactClass = require('create-react-class');
+
+const LanguageSwitcher = createReactClass({
 
   getClass(locale) {
     return localizify.getLocale() === locale ? 'active' : '';

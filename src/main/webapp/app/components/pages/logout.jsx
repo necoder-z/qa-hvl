@@ -1,8 +1,8 @@
 import React from 'react';
 import auth from '../../auth';
 import { t } from 'localizify';
-
-const LogoutPage = React.createClass({
+var createReactClass = require('create-react-class');
+const LogoutPage = createReactClass({
   componentDidMount() {
     auth.logout()
   },

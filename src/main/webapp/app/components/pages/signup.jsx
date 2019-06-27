@@ -4,8 +4,9 @@ import { withRouter  } from 'react-router';
 
 import { t } from 'localizify';
 
+var createReactClass = require('create-react-class');
 const SignupPage = withRouter(
-  React.createClass({
+  createReactClass({
 
     getInitialState() {
       return {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { t } from 'localizify';
-
-var Footer = React.createClass({
+var createReactClass = require('create-react-class');
+var Footer = createReactClass({
   render() {
     return (
       <footer className="footer" id="footer">

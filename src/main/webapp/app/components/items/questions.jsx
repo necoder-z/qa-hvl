@@ -7,7 +7,8 @@ import Loader from '../utils/loader';
 
 import QuestionService from '../../services/question';
 
-const Questions = React.createClass({
+var createReactClass = require('create-react-class');
+const Questions = createReactClass({
   getInitialState() {
     return {
       questions: [],

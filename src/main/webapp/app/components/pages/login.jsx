@@ -3,9 +3,9 @@ import auth from '../../auth';
 import { withRouter  } from 'react-router';
 
 import { t } from 'localizify';
-
+var createReactClass = require('create-react-class');
 const LoginPage = withRouter(
-  React.createClass({
+  createReactClass({
 
     getInitialState() {
       return {
