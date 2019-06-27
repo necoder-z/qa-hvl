@@ -96,7 +96,7 @@ public class UserController {
 
 
     @RequestMapping(value = "/user/changepassword", method = RequestMethod.POST)
-    public AjaxResponseBody createQuestion(@RequestBody ChangePasswordModel data, UriComponentsBuilder ucBuilder) {
+    public AjaxResponseBody changePassword(@RequestBody ChangePasswordModel data, UriComponentsBuilder ucBuilder) {
         AjaxResponseBody result = new AjaxResponseBody();
 
         AuthService authService = new AuthService(data.getToken(), key);

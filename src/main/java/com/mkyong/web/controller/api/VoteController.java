@@ -49,7 +49,7 @@ public class VoteController {
 
     @JsonView(Views.Public.class)
     @RequestMapping(value = "/vote", method = RequestMethod.POST)
-    public AjaxResponseBody createQuestion(@RequestBody VoteModel data, UriComponentsBuilder ucBuilder) {
+    public AjaxResponseBody createVote(@RequestBody VoteModel data, UriComponentsBuilder ucBuilder) {
         logger.info("Creating Vote : {}", data);
         AjaxResponseBody result = new AjaxResponseBody();
 

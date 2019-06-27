@@ -84,7 +84,7 @@ public class AnswerController {
 
     @JsonView(Views.Public.class)
     @RequestMapping(value = "/answer", method = RequestMethod.POST)
-    public AjaxResponseBody createQuestion(@RequestBody AnswerModel data, UriComponentsBuilder ucBuilder) {
+    public AjaxResponseBody createAnswer(@RequestBody AnswerModel data, UriComponentsBuilder ucBuilder) {
         logger.info("Creating Answer : {}", data);
         AjaxResponseBody result = new AjaxResponseBody();
 

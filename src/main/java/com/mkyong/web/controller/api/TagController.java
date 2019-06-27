@@ -27,7 +27,7 @@ public class TagController {
 
     @JsonView(Views.Public.class)
     @RequestMapping(value = "/tags", method = RequestMethod.GET)
-    public ResponseEntity<List<Tag>> listAllQuestions() {
+    public ResponseEntity<List<Tag>> listAllTags() {
         List<Tag> tags = tagService.getAll();
         if (tags.isEmpty()) {
             return new ResponseEntity(HttpStatus.NO_CONTENT);
@@ -38,7 +38,7 @@ public class TagController {
 
     @JsonView(Views.Public.class)
     @RequestMapping(value = "/tag/{id}", method = RequestMethod.GET)
-    public ResponseEntity<?> getQuestion(@PathVariable("id") long id) {
+    public ResponseEntity<?> getTag(@PathVariable("id") long id) {
         logger.info("Fetching Tag with id {}", id);
         Tag tag = tagService.getById(id);
         if (tag == null) {
