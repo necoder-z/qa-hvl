@@ -19,8 +19,8 @@ import timeAgo from '../../utils/time-ago';
 import Tags from '../items/tags';
 
 
-
-var QuestionPage = withRouter(React.createClass({
+var createReactClass = require('create-react-class');
+var QuestionPage = withRouter(createReactClass({
   getInitialState() {
     return {
       data: {},
