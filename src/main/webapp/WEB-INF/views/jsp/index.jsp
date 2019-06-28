@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="${css}loaders.min.css">
   <link rel="stylesheet" href="${css}question.css">
   <link rel="stylesheet" href="${css}prism.css">
+  <link rel="stylesheet" href="${css}semantic.css">
   <!-- <link rel="stylesheet" href="${css}loader-default.css"> -->
 
   <script>
