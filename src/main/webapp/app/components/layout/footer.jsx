@@ -6,7 +6,7 @@ var Footer = createReactClass({
     return (
       <footer className="footer" id="footer">
         <div className="copyright">
-          HVL-QA | <span className="js-now-year">2019</span>
+            {t('projectName')} | <span className="js-now-year">2019</span>
         </div>
       </footer>
     );
