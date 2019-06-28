@@ -23,7 +23,7 @@ var Header = createReactClass({
               <li title={"You are " + (this.props.loggedIn ? '' : 'not') + " logged in."} className="li right">
                 {this.props.loggedIn ? (
 
-                  <span> {t('Hi')}, <Link to="/dashboard" activeClassName="active"><b>{localStorage.name}</b></Link> <Link to="/logout"><u>{t('Logout')}</u></Link> </span>
+                  <span> {t('Hi')},<Link to="/dashboard" activeClassName="active"><b><i className="fa fa-user" aria-hidden="true"></i> {localStorage.name}</b></Link> <Link to="/logout"><i className="fa fa-sign-out" aria-hidden="true"></i><u>{t('Logout')}</u></Link> </span>
 
                 ) : (
                   <span>
