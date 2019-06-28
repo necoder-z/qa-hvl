@@ -78,5 +78,7 @@
   "User haven't exist": "User haven't exist",
   "Hello": "Hello",
   "User's page": "User's page",
-  "Questions": "Questions"
+  "Questions": "Questions",
+  "username" : "Username",
+  "password" : "Password"
 }

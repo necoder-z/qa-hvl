@@ -32,12 +32,12 @@
   "User with that name isn't exist": "Bu isimde hiç kullanıcı yoktur.",
   "wrong_password": "hatalı şifre",
   "wrong old password": "hatalı eski şifre",
-  "Change password": "Şifre değiştir",
-  "Change password 2": "Şifre değiştir",
-  "Type old password": "Eski şifrenizi giriniz.",
-  "Type new password": "Yeni şifrenizi giriniz.",
-  "Type wrong data": "Hatalı veri yazın.",
-  "Login to system": "Sisteme giriş yap.",
+  "Change password": "Şifre değiştiriniz",
+  "Change password 2": "Şifre değiştiriniz",
+  "Type old password": "Eski şifrenizi giriniz",
+  "Type new password": "Yeni şifrenizi giriniz",
+  "Type wrong data": "Hatalı veri girdiniz",
+  "Login to system": "Sisteme giriş yap",
   "Sign up 2": "Kaydol",
   "year": "yıl",
   "years": "yıl",
@@ -78,5 +78,7 @@
   "User haven't exist": "Kullanıcı mevcut değil.",
   "Hello": "Selam",
   "User's page": "Kullanıcı Sayfası",
-  "Questions": "Sorular"
+  "Questions": "Sorular",
+  "username" : "Kullanıcı Adı",
+  "password" : "Şifre"
 }
