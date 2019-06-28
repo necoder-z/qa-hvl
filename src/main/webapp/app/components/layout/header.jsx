@@ -13,7 +13,7 @@ var Header = createReactClass({
             <ul id="menu" className="menu">
               <li className="li logo">
                 <Link to="/" className="black south" activeClassName="active" title="Q/A HVL">
-                  <strong><i className="fa fa-bug" aria-hidden="true"></i> Q/A HVL
+                  <strong><i className="fa fa-home" aria-hidden="true"></i> Q/A HVL
                   </strong>
                 </Link>
               </li>

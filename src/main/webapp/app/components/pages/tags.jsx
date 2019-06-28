@@ -4,6 +4,7 @@ import TagService from '../../services/tag';
 import { t } from 'localizify';
 
 import { Link } from 'react-router';
+import { Button, Card } from 'semantic-ui-react'
 
 var createReactClass = require('create-react-class');
 const TagsPage = createReactClass({
@@ -37,8 +38,21 @@ const TagsPage = createReactClass({
         <div className="tags">
             {data.map((item, index) =>
               <div key={index} style={{float: 'none'}}>
-                <Link to ={`/questions/tagged/${item.name}`} className="post-tag" title={t('how questions by tag «{tag}»', { tag: item.name })}>{item.name}</Link>
-                <span style={{paddingRight: '6px', color: '#777', fontSize: '11px'}}>x {item.popular}</span>
+                  <Card.Group>
+                  <Card>
+                      <Card.Content>
+                          <Card.Header>{item.name}</Card.Header>
+                          <Card.Meta>x{item.popular}</Card.Meta>
+                      </Card.Content>
+                      <Card.Content extra>
+                          <div className='ui two buttons'>
+                              <Button as={Link} to={`/questions/tagged/${item.name}`}  basic color='green'>
+                                  Go Tag
+                              </Button>
+                          </div>
+                      </Card.Content>
+                  </Card>
+                  </Card.Group>
               </div> 
             )}
               
@@ -47,5 +61,7 @@ const TagsPage = createReactClass({
     );
   }
 });
+//item.popular
+//item.name
 
 export default TagsPage;
