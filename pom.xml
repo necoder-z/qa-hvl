@@ -138,7 +138,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/spring4ajax</contextPath>
+						<contextPath>/solution-library</contextPath>
 					</webApp>
 					<httpConnector>
 						<!--host>localhost</host-->
@@ -155,7 +155,7 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>spring4ajax</wtpContextName>
+					<wtpContextName>solution-library</wtpContextName>
 				</configuration>
 			</plugin>
 
@@ -178,7 +178,7 @@
 					<port>9990</port>
 					<username>admin</username>
 					<password>admin</password>
-					<name>spring4ajax.war</name>
+					<name>solution-library.war</name>
 				</configuration>
 			</plugin>
 

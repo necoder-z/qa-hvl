@@ -29,12 +29,12 @@
   <!-- <link rel="stylesheet" href="${css}loader-default.css"> -->
 
   <script>
-    window.config = { basename: '/spring4ajax' };
+    window.config = { basename: '/solution-library' };
   </script>
 
 </head>
 <body>
-  <div id="app" class="wrapper"></div>
+  <div id="app" class="wrapper" ></div>
   <script src="${js}/bundle.js"></script>
   <script src="${js}/prism.js"></script>
 </body>
