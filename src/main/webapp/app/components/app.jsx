@@ -27,7 +27,7 @@ const App = createReactClass({
 
   render() {
     return (
-      <div>
+      <div style={{backgroundColor:'aliceblue'}}>
         <Header loggedIn={this.state.loggedIn} />
         <section className="content" id="main">
           {this.props.children}

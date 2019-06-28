@@ -9,9 +9,12 @@ var Header = createReactClass({
     return (
       <header id="header">
         <div className="header-wrap">
+            <div style={{marginLeft:'45%'}}>
+            <img style={{marginTop:'10px'}} src={'https://i.ibb.co/475n3rX/rsz-1mylogo.jpg'}/>
+            </div>
           <div className="header">
             <ul id="menu" className="menu" style={{fontSize:'14px'}}>
-              <li className="li logo">
+                <li className="li logo">
                 <Link to="/" className="black south" activeClassName="active" title="Q/A HVL">
                   <strong><i className="fa fa-home" aria-hidden="true"></i> {t('projectName')}
                   </strong>
