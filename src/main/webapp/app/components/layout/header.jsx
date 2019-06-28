@@ -10,21 +10,20 @@ var Header = createReactClass({
       <header id="header">
         <div className="header-wrap">
           <div className="header">
-            <ul id="menu" className="menu">
+            <ul id="menu" className="menu" style={{fontSize:'14px'}}>
               <li className="li logo">
                 <Link to="/" className="black south" activeClassName="active" title="Q/A HVL">
-                  <strong><i className="fa fa-home" aria-hidden="true"></i> Q/A HVL
+                  <strong><i className="fa fa-home" aria-hidden="true"></i> {t('projectName')}
                   </strong>
                 </Link>
               </li>
               <li className="li"><Link to="/add" activeClassName="active"><u>{t('Add')}</u></Link></li>
               <li className="li"><Link to="/tags" activeClassName="active"><u>{t('Tags')}</u></Link></li>
-              <li className="li"><Link to="/dashboard" activeClassName="active"><u>{t('Profile')}</u></Link></li>
               <li className="li right"><LanguageSwitcher /></li>
               <li title={"You are " + (this.props.loggedIn ? '' : 'not') + " logged in."} className="li right">
                 {this.props.loggedIn ? (
 
-                  <span> {t('Hi')}, <b>{localStorage.name}</b> <Link to="/logout"><u>{t('Logout')}</u></Link> </span>
+                  <span> {t('Hi')}, <Link to="/dashboard" activeClassName="active"><b>{localStorage.name}</b></Link> <Link to="/logout"><u>{t('Logout')}</u></Link> </span>
 
                 ) : (
                   <span>

@@ -1,6 +1,6 @@
 {
   "Asked": "Asked",
-  "Add": "Add",
+  "Add": "Add Question",
   "Tags": "Tags",
   "Profile": "Profile",
   "Hi": "Hi",
@@ -80,5 +80,6 @@
   "User's page": "User's page",
   "Questions": "Questions",
   "username" : "Username",
-  "password" : "Password"
+  "password" : "Password",
+  "projectName": "Solution Library"
 }

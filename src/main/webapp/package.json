@@ -1,15 +1,15 @@
 {
-  "name": "spring-mvc-react",
-  "version": "1.0.0",
-  "description": "",
+  "name": "qa-havelsan",
+  "version": "0.0.1",
+  "description": "QA HAVELSAN",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alexander Morgunov <fxl@list.ru>",
-  "license": "ISC",
+  "author": "QA Havelsan <havelsan>",
+  "license": "Havelsan",
   "dependencies": {
     "create-react-class": "^15.6.3",
     "history": "^2.1.2",

@@ -1,6 +1,6 @@
 {
   "Asked": "Sorulma Zamanı: ",
-  "Add": "Ekle",
+  "Add": "Soru Ekle",
   "Tags": "Etiketler",
   "Profile": "Profil",
   "Hi": "Selam",
@@ -80,5 +80,6 @@
   "User's page": "Kullanıcı Sayfası",
   "Questions": "Sorular",
   "username" : "Kullanıcı Adı",
-  "password" : "Şifre"
+  "password" : "Şifre",
+  "projectName": "Çözüm Kütüphanesi"
 }
